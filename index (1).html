@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Sederhana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #f4f6f8;
+    }
+
+    .sidebar {
+      width: 240px;
+      background-color: #2c3e50;
+      color: white;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 40px;
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .nav-link {
+      margin: 10px 0;
+      padding: 10px 15px;
+      border-radius: 6px;
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .nav-link:hover {
+      background-color: #34495e;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topbar {
+      background-color: #fff;
+      padding: 15px 25px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .topbar h1 {
+      font-size: 20px;
+      color: #333;
+    }
+
+    .content {
+      flex: 1;
+      padding: 25px;
+    }
+
+    .footer {
+      background-color: #fff;
+      padding: 15px 25px;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+
+      body {
+        flex-direction: column;
+      }
+
+      .main-content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>My Dashboard</h2>
+    <a href="#" class="nav-link">Beranda</a>
+    <a href="#" class="nav-link">Pengguna</a>
+    <a href="#" class="nav-link">Laporan</a>
+    <a href="#" class="nav-link">Pengaturan</a>
+  </div>
+
+  <div class="main-content">
+    <div class="topbar">
+      <h1>Selamat Datang!</h1>
+    </div>
+
+    <div class="content">
+      <div class='tableauPlaceholder' id='viz1751090948587' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt=' ' src='https://public.tableau.com/static/images/le/leon12jenistabeau/Dashboard1/1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='leon12jenistabeau/Dashboard1' />
+          <param name='tabs' value='yes' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/le/leon12jenistabeau/Dashboard1/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1751090948587');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) {
+          vizElement.style.minWidth='1000px';
+          vizElement.style.maxWidth='100%';
+          vizElement.style.minHeight='850px';
+          vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';
+        } else if (divElement.offsetWidth > 500) {
+          vizElement.style.minWidth='1000px';
+          vizElement.style.maxWidth='100%';
+          vizElement.style.minHeight='850px';
+          vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';
+        } else {
+          vizElement.style.width='100%';
+          vizElement.style.minHeight='3450px';
+          vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Dashboard Sederhana. Dibuat dengan ❤️.
+    </div>
+  </div>
+</body>
+</html>
